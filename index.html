@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Convertor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./fav.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <div class="heading"><h1 id="message">BASE CONVERTOR</h1></div>
+    <div class="container">
+        
+        <div class="input">
+            <input id="firstNum" placeholder=" Enter Number">
+            <input id="SecondNum" placeholder=" Converted Number">
+        </div>
+        <div class="body">
+
+            <div class="from">
+                <label for="convert-from">From</label>
+                <select name="from" id="convert-from">
+                    <option value="10">Decimal</option>
+                    <option value="16">Hexadecimal</option>
+                    <option value="2">Binary</option>
+                    <option value="8">Octal</option>
+                </select>
+            </div>
+            <div class="to">
+                <label for="convert-to">To</label>
+                <select name="to" id="convert-to">
+                    <option value="10">Decimal</option>
+                    <option value="16">Hexadecimal</option>
+                    <option value="2">Binary</option>
+                    <option value="8">Octal</option>
+                </select>
+            </div>
+        </div>
+        <div class="button-click">
+            <button id="Convert">Convert</button>
+            <button id="Swap">Swap</button>
+            <button id="Clear">Clear</button>
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
