@@ -23,11 +23,25 @@ function change(){
        return parseInt(number,initial_base)
        .toString(change_base);
    }
+
    let numb=base_convert(num,basef,baset);
-   if(isNaN(numb)){
-      SecondNum.value=`Please enter valid number`;
-   }
-   else {SecondNum.value=numb;}
+   
+
+   switch(basef) {
+      
+        
+        case 16:
+         if(isNaN(num)&&num>'f'){SecondNum.value=`Please enter valid number`}
+         else {let numb=base_convert(num,basef,baset);
+           SecondNum.value=numb}
+        break;
+      default:
+         if(isNaN(numb) ){SecondNum.value=`Please enter valid number`}
+         else {  SecondNum.value=numb;}
+    }
+
+
+   
  
    
 }
